@@ -2,10 +2,11 @@ const mysql=require('mysql');
 
 //connecting to data base
 const connection =mysql.createConnection({
-    host:'localhost',
+    host:'127.0.0.7',
     user:'root',
     password:'root1234',
-    database:'result_analysis'
+    database:'result_analysis',
+    port:'3306'
 });
 //checking if connection is succesful or not
 connection.connect((error)=>{
